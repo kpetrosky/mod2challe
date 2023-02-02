@@ -1,3 +1,4 @@
+
 body {
     background-color: rgb(184, 136, 228);
     }
@@ -26,7 +27,8 @@ nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
-    align-items: flex-start;
+    align-items: end;
+
 }
 
 nav a {
@@ -36,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--background);
+    background-color: fuchsia;
 }
 
 main {
