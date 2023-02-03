@@ -1,20 +1,25 @@
-
 body {
     background-color: rgb(184, 136, 228);
-    }
+    table-layout: fixed;
+    width: 100%;
+}
 
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 1%;
-    background-color: var(--background);
+    background-color: pink;
     color: rgb(17, 16, 16);
+    display: inline-block;
+    border: thick double #32a1ce;
+    border-radius: 25px;
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 75px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-self: flex-start;
+
 }
 
 h2 {
@@ -24,18 +29,13 @@ h2 {
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
     align-items: end;
-
+    display: table-row;
+    justify-content: flex-end;
+    background-color: grey;
+    
 }
 
-nav a {
-    color: #5b2dc7;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 nav a:hover {
     background-color: fuchsia;
@@ -46,4 +46,11 @@ main {
     flex: 1 1 0;
     max-width: 1200px;
     margin: 2% auto;
+}
+
+aside {
+    display: inline-block;
+    justify-content: flex-end;
+    background-color: grey;
+    
 }
