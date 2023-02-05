@@ -4,27 +4,45 @@ header {
     /* position: absolute; */
     bottom: 20px;
     left: 20px;
-    color: white;
+    color: rgb(8, 8, 8);
     padding-left: 20px;
     padding-right: 20px;
     padding: 20px;
     padding-bottom: 20px;
-    border: 4mm ridge rgba(60, 30, 196, 0.6);
+    border: 4mm ridge rgba(9, 59, 21, 0.6);
     border-radius: 25px;
     object-position: left top;
+    background-color: rgb(96, 96, 104);
+    opacity: 0.6;
+
 }
 
+
 body {
-    background-color: rgb(194, 190, 197);
-    table-layout: fixed;
+    background-color: rgb(206, 194, 216);
+    /* table-layout: fixed; */
     width: 100%;
+    display: grid;
 }
-    
+
+/* Clear floats after the columns */
+/* section::after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+
 
 p {
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
-    padding: 10px 50px 30px 0;
+    /* padding: 10px 50px 30px 0; */
+    color: black;
+    /* display: flex;
+    flex-direction: row;
+    text-align: end;
+    align-items: end; */
 
 }
 
@@ -33,13 +51,13 @@ p {
 
 } */
 
-/* h1 {
-    font-size: 55px;
+h1 {
+    font-size: 105px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-self: flex-start;
-} */
+}
 
-h2 {
+/* h2 {
     margin: 2% 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 50px;
@@ -50,11 +68,11 @@ h2 {
     align-items: center;
     background-color: rgb(211, 202, 203);
     color: white;
-}
+} */
 
 nav ul {
     align-items: end;
-    /* display: table-row; */
+    display: table-row;
     justify-content: flex-end;
     /* background-color: grey; */
     display: flex;
@@ -64,42 +82,66 @@ nav ul {
 nav ul li {
     text-decoration: none;
     margin: 25px;
-    font-size: 25px;
+    font-size: 45px;
 }
 
 
 nav a:hover {
-    background-color: rgb(253, 252, 253);
+    background-color: rgb(201, 186, 201);
 }
 
 main {
-    display: flex;
+    /* display: flex; */
     /* flex: 1 1 0; */
     flex-direction: column;
     max-width: 1200px;
     margin: 2% auto;
+    display: grid;
+    text-align: start;
+
 }
+.p
 
 .work {
     display: flex;
     flex-direction: row;
+    font-size: 50px;
     color: white;
+    align-items: end; 
+    /* text-align: start;
+    margin: 15px;
+    vertical-align: text-top; */
 }
 
 .contact {
     display: flex;
     flex-direction: row;
+    font-size: 50px;
+    color: white;
+    align-items: end;
 }
 
 .about {
     display: flex;
     flex-direction: row;
+    font-size: 50px;
+    color: white;
+    align-items: end;
 }
 
 .other {
     display: flex;
     flex-direction: row;
+    font-size: 50px;
+    color: white;
+    align-items: end;
 }
+
+.parts {
+    display: grid;
+    text-align: start;
+}
+
 
 /* aside {
     display: inline-block;
@@ -133,15 +175,28 @@ footer {
 
 /* Container holding the image and the text */
 .container {
-    /* position: relative; */
+    position: relative;
     text-align: center;
     color: white;
     font-size: 75px;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
 }
+
 
 /* Bottom left text */
 .bottom-left {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    top: 340px;
+    left: 45px;
+    text-align: start;
+    color: white;
+    font-size: 95px;
 }
+
+@media screen and (min-width: 900px) {
+    article {
+      padding: 1rem 3rem;
+    }
+  }
