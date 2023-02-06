@@ -21,8 +21,8 @@ header {
 body {
     background-color: rgb(206, 194, 216);
     /* table-layout: fixed; */
-    width: 100%;
-    display: grid;
+    /* width: 100%; */
+    /* display: grid; */
 }
 
 /* Clear floats after the columns */
@@ -50,12 +50,20 @@ p {
     display: flex;
 
 } */
-
+/* * { box-sizing: border-box;
+} */
 h1 {
     font-size: 105px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-self: flex-start;
 }
+
+/* article {
+    float: left;
+    width: 70%;
+    padding: 20px; */
+/* background-color: #f1f1f1; */
+
 
 /* h2 {
     margin: 2% 0;
@@ -85,32 +93,28 @@ nav ul li {
     font-size: 45px;
 }
 
-
 nav a:hover {
     background-color: rgb(201, 186, 201);
 }
 
 main {
     /* display: flex; */
-    /* flex: 1 1 0; */
+    flex: 1 1 0;
     flex-direction: column;
-    max-width: 1200px;
-    margin: 2% auto;
-    display: grid;
-    text-align: start;
-
+    display: block;
+    /* max-width: 1200px; */
+    /* margin: 2% auto; */
 }
-.p
 
 .work {
     display: flex;
     flex-direction: row;
     font-size: 50px;
     color: white;
-    align-items: end; 
-    /* text-align: start;
-    margin: 15px;
-    vertical-align: text-top; */
+    align-items: end;
+    max-width: 1200px;
+    margin: 2% auto;
+    align-content: end;
 }
 
 .contact {
@@ -119,6 +123,8 @@ main {
     font-size: 50px;
     color: white;
     align-items: end;
+    max-width: 1200px;
+    margin: 2% auto;
 }
 
 .about {
@@ -127,6 +133,8 @@ main {
     font-size: 50px;
     color: white;
     align-items: end;
+    max-width: 1200px;
+    margin: 2% auto;
 }
 
 .other {
@@ -135,11 +143,18 @@ main {
     font-size: 50px;
     color: white;
     align-items: end;
+    max-width: 1200px;
+    margin: 2% auto;
 }
 
 .parts {
     display: grid;
     text-align: start;
+    flex-direction: column;
+    align-items: start;
+    float: left;
+    width: 70%;
+    padding: 20px;
 }
 
 
@@ -182,6 +197,8 @@ footer {
     width: 300px;
     padding: 50px;
     margin: 20px;
+    max-width: 1200px;
+    margin: 2% auto;
 }
 
 
@@ -197,6 +214,12 @@ footer {
 
 @media screen and (min-width: 900px) {
     article {
-      padding: 1rem 3rem;
+        padding: 1rem 3rem;
     }
-  }
+}
+
+/* @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;  }
+    } */
