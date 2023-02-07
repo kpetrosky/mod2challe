@@ -39,11 +39,13 @@ p {
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     /* padding: 10px 50px 30px 0; */
-    color: black;
+    color: rgb(252, 251, 251);
     /* display: flex;
     flex-direction: row;
     text-align: end;
     align-items: end; */
+    flex-direction: column;
+    display: flex;
 
 }
 
@@ -92,6 +94,8 @@ nav ul li {
     text-decoration: none;
     margin: 25px;
     font-size: 45px;
+    align-content: start;
+    
 }
 
 nav a:hover {
@@ -99,7 +103,7 @@ nav a:hover {
 }
 
 main {
-    display: flex;
+    /* display: flex; */
     /* flex: 1 1 0;
     flex-direction: column; */
     display: block;
@@ -107,94 +111,16 @@ main {
     /* margin: 2% auto; */
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: auto;
+
 }
-
-/* .work {
-    display: flex;
-    flex-direction: row;
-    font-size: 50px;
-    color: white;
-    align-items: end;
-    max-width: 800px;
-    margin: 2% auto;
-    align-content: end;
-    float: end;
-} */
-
-/* .contact {
-    display: flex;
-    flex-direction: row;
-    font-size: 50px;
-    color: white;
-    align-items: end;
-    max-width: 800px;
-    align-content: end;
-    margin: 2% auto;
-    align-items: end;
-} */
-
-/* .about {
-    display: flex;
-    flex-direction: row;
-    font-size: 50px;
-    color: white;
-    align-items: end;
-    max-width: 800px;
-    margin: 2% auto;
-    align-content: end;
-} */
-
-/* .other {
-    display: flex;
-    flex-direction: row;
-    font-size: 50px;
-    color: white;
-    align-items: end;
-    max-width: 800px;
-    margin: 2% auto;
-    align-content: end;
-} */
-
-/* .parts {
-    display: grid;
-    text-align: start;
-    flex-direction: column;
-    align-items: start;
-    float: left;
-    width: 70%;
-    padding: 20px;
-} */
-
-
-/* aside {
-    display: inline-block;
-    justify-content: flex-end;
-    background-color: rgb(58, 56, 56);
-    color: white;
-} */
 
 footer {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(251, 252, 253);
 }
-
-/* .container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    color: white
-}
-
-.text-block {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-} */
 
 /* Container holding the image and the text */
 .container {
@@ -202,37 +128,39 @@ footer {
     text-align: center;
     color: white;
     font-size: 75px;
-    width: 300px;
-    padding: 50px;
+    width: 200px;
+    padding: 10px;
     margin: 20px;
-    max-width: 500px;
+    max-width: 250px;
     margin: 2% auto;
 }
-
 
 /* Bottom left text */
 .bottom-left {
     position: absolute;
-    top: 340px;
+    top: 100px;
     left: 45px;
     text-align: start;
     color: white;
-    font-size: 95px;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 900px) {
     article {
         padding: 1rem 3rem;
     }
-}
+} */
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
     nav, article {
       width: 100%;
       height: auto;  }
-    } */
+    }
 
 section {
-    display: flex;
+    /* display: flex; */
     align-items: flex-end;
+    display: flexbox;
+    flex-wrap: wrap;
 }
